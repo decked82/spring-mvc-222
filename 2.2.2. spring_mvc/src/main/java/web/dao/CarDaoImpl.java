@@ -17,12 +17,12 @@ public class CarDaoImpl implements CarDao {
         cars.add(new Car("Пассажирский", "Мерседес-Бенз Ситан", 2020));
         cars.add(new Car("Пассажирский", "БМВ 7", 2019));
         cars.add(new Car("Пассажирский", "Тесла Модель С", 2021));
-        cars.add(new Car("Пассажирский", "Феррари Ф8 Трибуто", 2018));
+        cars.add(new Car("Спортивный", "Феррари Ф8 Трибуто", 2018));
     }
 
     @Override
     public List<Car> listCars(int count) {
-        if (count >= 5) {
+        if (count >= cars.size()) {
             return cars;
         } else {
             return cars.stream().limit(count).collect(Collectors.toList());

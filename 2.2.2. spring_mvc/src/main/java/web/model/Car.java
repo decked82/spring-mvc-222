@@ -2,7 +2,7 @@ package web.model;
 
 public class Car {
 
-    private String classification;
+    private String typeOfVehicle;
 
     private String model;
 
@@ -11,18 +11,18 @@ public class Car {
     public Car() {
     }
 
-    public Car(String classification, String model, int yearOfManufacture) {
-        this.classification = classification;
+    public Car(String typeOfVehicle, String model, int yearOfManufacture) {
+        this.typeOfVehicle = typeOfVehicle;
         this.model = model;
         this.yearOfManufacture = yearOfManufacture;
     }
 
-    public String getClassification() {
-        return classification;
+    public String getTypeOfVehicle() {
+        return typeOfVehicle;
     }
 
-    public void setClassification(String classification) {
-        this.classification = classification;
+    public void setTypeOfVehicle(String typeOfVehicle) {
+        this.typeOfVehicle = typeOfVehicle;
     }
 
     public String getModel() {

@@ -15,7 +15,7 @@
     </tr>
 
 <tr th:each="car : ${cars}">
-    <td th:text="${car.getClassification()}"/>
+    <td th:text="${car.getTypeOfVehicle()}"/>
     <td th:text="${car.getModel()}"/>
     <td th:text="${car.getYearOfManufacture()}"/>
 </tr>
